@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f {
+            background-color: cornflowerblue;
+            display: flex;
+            width: 600px;
+            flex-direction: row;
+            flex: 1;
+        }
+        
+        .f div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            width: 100px;
+        }
+        
+        div .e {
+            background-color: red;
+            align-self: auto;
+            order: 2;
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="f">
+        <div class="e">1</div>
+        <div style="order:5;flex-basis: 200px;">2</div>
+        <div style="order:4">3</div>
+        <div style="order:2">4</div>
+        <div style="order:">5</div>
+    </div>
+</body>
+
+</html>

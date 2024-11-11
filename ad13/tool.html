@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t1 {
+            background-color: chartreuse;
+            padding: 15px 32px;
+            display: inline-block;
+        }
+        
+        .t1 .t2 {
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0px;
+            position: absolute;
+            bottom: 70%;
+            left: 50%;
+            margin-left: -60px;
+            z-index: 1;
+        }
+        
+        .t1:hover .t2 {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="t1">Hover over me
+            <span class="t2">Tooltip text</span>
+        </div>
+    </center>
+</body>
+
+</html>
